@@ -1,0 +1,146 @@
+.calculator {
+  text-align: center;
+}
+
+.calculator-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
+
+.calculator-tabs {
+  margin-bottom: 40px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 30px;
+  }
+}
+
+.switch-button {
+  @include  button-styles($c-switch-btn, $c-switch-btn-bg, $c-switch-btn-hover, $c-switch-btn-hover-bg );
+  border: 1px solid $c-switch-btn-border;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-right: 12px;
+  padding: 12px 35px;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 15px;
+    line-height: 16.8px;
+    padding: 11px 30px;
+  }
+}
+
+.switch-button-active {
+  @include  button-styles($c-switch-active-btn, $c-switch-active-btn-bg, $c-switch-active-btn-hover, $c-switch-active-btn-hover-bg );
+  border: 1px solid $c-switch-active-btn-border;
+}
+
+.calculator-body {
+  background-color: $c-calc-bg;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 70px 107px;
+
+  @media (max-width: $screen-md-max) {
+    padding: 60px 40px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    border-radius: 16px;
+    padding: 30px 15px;
+  }
+}
+
+.calculator-sliders {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 55%;
+  justify-content: space-between;
+
+  @media (max-width: $screen-xs-max) {
+    flex-basis: 100%;
+  }
+}
+
+.calculator-summary {
+  background-color: $c-calc-summary-bg;
+  border-radius: 15px;
+  flex-basis: 23%;
+  padding: 50px 44px;
+  box-shadow: 0 7px 9px $c-calculator-summary-shadow;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 30px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    border-radius: 5px;
+    flex-basis: 100%;
+    margin-top: 5px;
+  }
+}
+
+.calculator-payments-label {
+  color: $c-calc-label;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  margin: 0;
+
+  @media (max-width: $screen-xs-max) {
+    color: $c-calc-label-xs;
+  }
+}
+
+.calculator-payments-value {
+  color: $c-calc-value;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 50.4px;
+  margin-top: 14px;
+  margin-bottom: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.calculator-submit-button {
+  @include  button-styles($c-submit-btn, $c-submit-btn-bg, $c-submit-btn-hover, $c-submit-btn-hover-bg );
+  border: 1px solid $c-submit-btn-border;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 12px 23px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.calculator-disclaimer {
+  color: $c-calc-disclaimer;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  margin-top: 53px;
+  text-align: left;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,83 @@
+.awards-section {
+  color: $c-awards-section;
+  position: relative;
+  text-align: center;
+}
+
+.awards-section-title {
+  letter-spacing: -0.4px;
+  margin-bottom: 45px;
+  margin-top: 0;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 25px;
+    letter-spacing: -0.25px;
+    line-height: 29px;
+    margin-bottom: 29px;
+  }
+}
+
+.next-btn {
+  cursor: pointer;
+  background-color: $c-awards-section-btn-bg;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .next-btn-img {
+    @media (max-width: $screen-xs-max) {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+.awards-section-cards {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.awards-section-card {
+  background-color: $c-awards-section-card-bg;
+  border-radius: 20px;
+  flex-basis: 33%;
+  padding-bottom: 46px;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 5px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    min-width: 259px;
+  }
+}
+
+.amfok-img {
+  margin-top: 40px;
+}
+
+.gerb-img {
+  margin-top: 40px;
+}
+
+.cup-img {
+  margin-top: 23px;
+}
+
+.awards-section-card-content {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.16px;
+  line-height: 19px;
+  padding: 0 45px;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 13px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 0 25px;
+  }
+}

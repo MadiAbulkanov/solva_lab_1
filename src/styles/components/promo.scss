@@ -1,0 +1,109 @@
+.promo-section {
+  background: url('src/assets/images/avto-des.png'), linear-gradient(to right, $c-promo-bg, $c-promo-bg-gradient);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 26px auto;
+  padding-bottom: 85px;
+  padding-left: 100px;
+  padding-top: 18px;
+
+  @media (max-width: $screen-md-max) {
+    background: url('src/assets/images/avto-mob.png'), linear-gradient(to right, $c-promo-bg, $c-promo-bg-gradient);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    background: url('src/assets/images/avto-mob.png'), linear-gradient(to right, $c-promo-bg, $c-promo-bg-gradient);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 400px 350px, 100%;
+    border-radius: 16px;
+    align-items: center;
+    flex-direction: column;
+    min-height: 498px;
+    padding: 45px 21px 21px 21px;
+    text-align: center;
+  }
+}
+
+.conditions-link {
+  color: $c-promo-link;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 100%;
+  margin-right: 21px;
+  margin-left: auto;
+  text-decoration: underline;
+
+  @media (max-width: $screen-xs-max) {
+    margin-left: 0;
+    margin-top: auto;
+    order: 4;
+  }
+}
+
+.promo-title {
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 100%;
+  margin-bottom: 30px;
+  margin-top: 74px;
+  text-transform: uppercase;
+
+  @media (max-width: $screen-md-max) {
+    max-width: 50%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 35px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    max-width: 100%;
+  }
+}
+
+.promo-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  max-width: 460px;
+
+  @media (max-width: $screen-md-max) {
+    max-width: 40%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0;
+    max-width: 100%;
+  }
+}
+
+.promo-button {
+  @include button-styles( $c-promo-btn, $c-promo-btn-bg, $c-promo-btn-hover, $c-promo-btn-hover-bg );
+  border: 1px solid  $c-promo-btn-border;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 40px;
+  max-width: 216px;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 30px;
+    padding: 14px 20px;
+  }
+}

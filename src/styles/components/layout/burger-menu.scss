@@ -1,0 +1,122 @@
+.burger-menu {
+  background-color: $c-burger-menu-bg;
+  height: 100%;
+  left: 0;
+  max-height: calc(100vh - 55px);
+  overflow-y: auto;
+  position: fixed;
+  top:55px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-110%);
+  width: 100%;
+}
+
+.burger-menu.open {
+  transform: translateX(0);
+}
+
+.burger-menu-content {
+  background-color: $c-burger-menu-content-bg;
+  padding: 15px;
+}
+
+.burger-primary-nav {
+  margin-bottom: 55px;
+}
+
+.burger-primary-navbar {
+  list-style: none;
+  margin: 35px 0 20px 0;
+  padding: 0;
+}
+
+.burger-primary-nav-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.burger-primary-nav-link {
+  color: $c-burger-primary-nav-link;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.open-link-img {
+  height: 31px;
+  width: 25px;
+}
+
+.burger-secondary-nav {
+  background-color: $c-burger-secondary-nav-bg;
+
+  .nav-items {
+    justify-content: flex-start;
+
+    .nav-item {
+      &:nth-child(6) {
+        order: 6;
+      }
+    }
+  }
+}
+
+.info-block-top {
+  align-items: flex-start;
+  border-bottom: 1px solid $c-burger-menu-border;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 22px;
+
+  .contact-info {
+    .phone {
+      font-size: 24px;
+      line-height: 100%;
+    }
+
+    .work-info {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 100%;
+    }
+  }
+
+  .language-button {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}
+
+.info-block-bottom {
+  padding: 30px 0;
+}
+
+.burger-menu-additional-info {
+  .cardon-link {
+    align-items: center;
+    color: $c-burger-menu-link;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    justify-content: flex-start;
+    line-height: 100%;
+
+    .social-media-link-icon {
+      margin-right: 8px;
+      width: 27px;
+      height: 27px;
+    }
+  }
+}
+
+.burger-menu-social-media {
+  display: flex;
+  column-gap: 5px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 29px;
+}

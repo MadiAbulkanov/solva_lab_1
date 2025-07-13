@@ -1,0 +1,30 @@
+// settings
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/variables";
+
+// mixins
+@import "tools/mixins";
+
+// generic
+@import "generic/base";
+
+// elements
+// your files here
+
+// components
+@import "components/layout/header";
+@import "components/promo";
+@import "components/product-cards";
+@import "components/product-card";
+@import "components/nav-bar";
+@import "components/app-section";
+@import "components/awards-section";
+@import "components/payment-section";
+@import "components/layout/footer";
+@import "components/layout/burger-menu";
+@import "components/calculator";
+@import "components/range-slider";
+@import "components/layout/dropdownMenu";
+@import "components/page-layout";
+@import "components/contribution-layout";

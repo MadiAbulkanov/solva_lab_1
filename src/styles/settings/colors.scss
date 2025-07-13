@@ -1,0 +1,170 @@
+// colors
+$c-white: #ffffff;
+$c-light-pink: #F5F5F5;
+$c-regal-blue: #233572;
+$c-catalina-blue: rgba(35, 53, 114, 0.4);
+$c-dark-sapphire: rgba(35, 53, 114, 0.68);
+$c-regal-blue-transparent: rgba(35, 53, 114, 0.5);
+$c-pink-red: #F51047;
+$c-crimson: #D00939;
+$c-light-blue: #BDCAED;
+$c-black: #000000;
+$c-blue-alice: #E9EFFF;
+$c-light-periwinkle: #95A8FF;
+$c-light-periwinkle-blue: #89A4FF;
+$c-pale-cornflower-blue: #a7bafa;
+$c-silver-sand: #c6c6c6;
+$c-davys-grey: #5a5a5a;
+$c-shadow-blue: #7A84A6;
+$c-tulip : #FA95AE;
+$c-lavender-indigo: #9665FF;
+$c-watermelon: #F489A3;
+$c-dark-orchid: #8345C8;
+$c-translucent-white: #FFFFFF3D;
+$c-alice-blue: #F1F5FF80;
+$c-alice-bluew: rgba(241, 245, 255, 0);
+$c-very-light-blue: #A1B6FF99;
+$c-malachite-green: #30BF39CC;
+$c-dark-charcoal: #222222;
+$c-tundora: #404040;
+$c-lavender-gray: #AAAEBE;
+$c-medium-slate-blue: #7A4DD3;
+$c-polar-ice: #F0F4FF80;
+$c-periwinkle-light: #A1B6FFD9;
+$c-periwinkle-blue: rgba(124, 143, 210, 0.23);
+
+$c-general-bg: $c-light-pink;
+$c-body: $c-white;
+
+$c-title: $c-regal-blue;
+
+// Header colors
+$c-header-icon-bg: $c-regal-blue;
+$c-header: $c-regal-blue;
+$c-header-bg: $c-white;
+$c-header-btn-bg: $c-white;
+$c-header-btn: $c-pink-red;
+$c-header-login-btn: $c-white;
+$c-header-login-btn-bg: $c-pink-red;
+$c-header-login-btn-border: $c-pink-red;
+$c-header-login-btn-hover-bg: $c-white;
+$c-header-login-btn-hover: $c-pink-red;
+$c-header-login-btn-bg-xs: $c-white;
+$c-header-login-btn-border-xs: $c-regal-blue;
+$c-header-login-btn-xs: $c-regal-blue;
+$c-header-btn-border: $c-pink-red;
+$c-header-btn-hover: $c-white;
+$c-header-btn-hover-bg: $c-pink-red;
+$c-header-link-hover: $c-pink-red;
+
+// Promo colors
+$c-promo-link: $c-white;
+$c-promo-btn: $c-white;
+$c-promo-btn-bg: $c-white;
+$c-promo-btn: $c-pink-red;
+$c-promo-btn-border: $c-white;
+$c-promo-btn-hover: $c-white;
+$c-promo-btn-hover-bg: $c-pink-red;
+$c-promo-bg: $c-pink-red;
+$c-promo-bg-gradient: $c-crimson;
+
+// PromoNavBar colors
+$c-promo-navbar: $c-white;
+$c-promo-navbar-link: $c-regal-blue;
+$c-promo-navbar-xs: $c-light-pink;
+
+// ProductCards color
+$c-product-cards-title: $c-regal-blue;
+$c-card-1-bg: $c-light-periwinkle;
+$c-card-1-btn: $c-regal-blue;
+$c-card-2-bg: $c-tulip;
+$c-card-2-btn: $c-pink-red;
+$c-card-3-bg: $c-light-periwinkle;
+$c-card-3-btn: $c-regal-blue;
+$c-card-4-bg: linear-gradient(to top, $c-watermelon, $c-lavender-indigo);
+$c-card-4-btn: $c-dark-orchid;
+$c-card-btn-bg: $c-white;
+$c-card-btn-border: $c-white;
+$c-card-btn-bg-hover: $c-translucent-white;
+$c-card-btn-hover: $c-white;
+
+// AppSection colors
+$c-app-section: $c-regal-blue;
+$c-app-section-border: $c-light-blue;
+$c-app-section-btn-border: $c-black;
+$c-app-section-btn-hover: $c-silver-sand;
+
+// AwardsSection colors
+$c-awards-section: $c-regal-blue;
+$c-awards-section-card-bg: $c-blue-alice;
+$c-awards-section-btn-bg: $c-light-pink;
+
+// PaymentSection colors
+$c-payment-section-bg: $c-light-periwinkle;
+$c-payment-section-btn: $c-white;
+$c-payment-section-btn-bg: $c-light-periwinkle;
+$c-payment-section-btn-border: $c-white;
+$c-payment-section-btn-hover-bg: $c-white;
+$c-payment-section-btn-hover: $c-light-periwinkle;
+
+// Footer colors
+$c-footer-bg: $c-white;
+$c-footer-link-bg: $c-light-periwinkle-blue;
+$c-footer-text: $c-regal-blue;
+$c-footer-link-hover-bg: $c-pale-cornflower-blue;
+$c-footer-span: $c-dark-sapphire;
+$c-footer-app-link-bg: $c-black;
+$c-footer-app-link-hover: $c-davys-grey;
+$c-footer-second-link: $c-regal-blue-transparent;
+$c-footer-copyright: $c-shadow-blue;
+$c-footer-nav-bg: $c-white;
+$c-footer-icon: $c-white;
+
+// BurgerMenu colors
+$c-burger-menu-bg: $c-white;
+$c-burger-menu-content-bg: $c-alice-blue;
+$c-burger-primary-nav-link: $c-regal-blue;
+$c-burger-menu-border: $c-very-light-blue;
+$c-burger-menu-link: $c-regal-blue;
+$c-burger-secondary-nav-bg: $c-alice-bluew;
+
+// Calculator colors
+$c-calc-bg: $c-blue-alice;
+$c-calc-summary-bg: $c-white;
+$c-calc-label: $c-tundora;
+$c-calc-label-xs: $c-regal-blue;
+$c-calc-value: $c-regal-blue;
+$c-switch-btn: $c-dark-charcoal;
+$c-switch-btn-bg: $c-light-pink;
+$c-switch-btn-hover: $c-white;
+$c-switch-btn-hover-bg: $c-light-periwinkle-blue;
+$c-switch-btn-border: $c-regal-blue;
+$c-switch-active-btn: $c-white;
+$c-switch-active-btn-bg: $c-light-periwinkle-blue;
+$c-switch-active-btn-hover: $c-dark-charcoal;
+$c-switch-active-btn-hover-bg: $c-light-pink;
+$c-switch-active-btn-border: $c-light-periwinkle-blue;
+$c-submit-btn: $c-white;
+$c-submit-btn-bg: $c-pink-red;
+$c-submit-btn-hover: $c-pink-red;
+$c-submit-btn-hover-bg: $c-white;
+$c-submit-btn-border: $c-pink-red;
+$c-calc-disclaimer: $c-lavender-gray;
+$c-calculator-summary-shadow: $c-periwinkle-blue;
+
+// RangeSlider colors
+$c-range-slider: $c-tundora;
+$c-range-slider-value: $c-regal-blue;
+$c-range-slider-limit-value: $c-lavender-gray;
+$c-range-slider-input: $c-pink-red;
+
+// DropdownMenu colors
+$c-dropdown-menu-bg: $c-white;
+$c-dropdown-menu-first-item-link: $c-catalina-blue;
+$c-dropdown-menu-link-bg: $c-pink-red;
+$c-dropdown-menu-link-bg-gradient: $c-medium-slate-blue;
+$c-dropdown-menu-link: $c-regal-blue;
+$c-dropdown-menu-nav-bar: $c-polar-ice;
+
+// PageLayout colors
+$c-page-layout: $c-regal-blue;

@@ -1,0 +1,135 @@
+.dropdown-menu {
+  background-color: $c-dropdown-menu-bg;
+  padding: 30px 40px;
+  border-radius: 15px;
+  margin: 15px;
+  margin-left: 0;
+  min-width: 780px;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 30px;
+    min-width: 660px;
+  }
+}
+
+.dropdown-menu-content {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+
+  @media (max-width: $screen-sm-max) {
+    gap: 20px;
+  }
+
+  .section {
+    margin-bottom: 25px;
+  }
+}
+
+.dropdown-menu-nav-items {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu-nav-item {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 100%;
+  list-style: none;
+
+  &:first-child {
+    .dropdown-menu-nav-link {
+      color: $c-dropdown-menu-first-item-link;
+    }
+  }
+
+  + .dropdown-menu-nav-item {
+    margin-top: 20px;
+  }
+}
+
+.private-nav-item {
+  &:first-child {
+    .dropdown-menu-nav-link {
+      background: linear-gradient(90deg, $c-dropdown-menu-link-bg, $c-dropdown-menu-link-bg-gradient);
+      background-clip: text;
+      color: transparent;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+  }
+}
+
+.private-nav-link {
+  color: $c-dropdown-menu-link;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+.dropdown-menu-nav-link {
+  color: $c-dropdown-menu-link;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+.dropdown-menu-nav-bar {
+  background-color: $c-dropdown-menu-nav-bar;
+  border-radius: 10px;
+  padding: 18px 15px;
+  max-width: 223px;
+
+  .nav-items {
+    flex-direction: column;
+    gap: 12px;
+
+    .nav-item {
+
+      &:nth-child(3) {
+        order: 4;
+      }
+
+      &:nth-child(4) {
+        order: 5;
+      }
+
+      .nav-link-icon {
+        width: 14px;
+        height: 14px;
+      }
+      .nav-link {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+    }
+  }
+}
+
+.dropdown-menu-contact-link {
+  color: $c-dropdown-menu-link;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 100%;
+
+  .social-media-link-icon {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.dropdown-menu-contact-link-text, .dropdown-menu-contact-link-phone {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropdown-menu-contact-link-text {
+  margin-right: 37px;
+}

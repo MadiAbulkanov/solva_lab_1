@@ -1,0 +1,101 @@
+.app-section {
+  background: url('src/assets/images/app-img.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px solid $c-app-section-border;
+  border-radius: 30px;
+  color: $c-app-section;
+  padding: 73px;
+
+  @media (max-width: $screen-md-max) {
+    background: url('src/assets/images/app-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px 26px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    background: url('src/assets/images/app-img-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 437px;
+  }
+}
+
+.app-section-content {
+  margin-left: auto;
+  margin-bottom: 12px;
+  max-width: 480px;
+  width: 100%;
+
+  @media (max-width: $screen-sm-max) {
+    margin: 0 auto;
+    max-width: 580px;
+    text-align: center;
+  }
+}
+
+.app-section-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 100%;
+  margin-bottom: 33px;
+  margin-top: 0;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 35px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 25px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+}
+
+.app-section-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-bottom: 47px;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.google-play-img {
+  margin-right: 13px;
+
+  @media (max-width: $screen-sm-max) {
+    margin-right: 9px;
+  }
+}
+
+.google-play-img, .app-store-img {
+  border: 1px solid $c-app-section-btn-border;
+  border-radius: 7px;
+  height: 36px;
+  padding: 8px 14px;
+  transition: 0.4s ease;
+  width: 151px;
+
+  &:hover {
+    background-color: $c-app-section-btn-hover;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding: 1px 8px;
+    width: 110px;
+  }
+}

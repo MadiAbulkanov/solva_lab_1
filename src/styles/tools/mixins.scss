@@ -1,0 +1,33 @@
+@mixin card-styles($backgrounds, $images, $buttons) {
+  @for $i from 1 through length($backgrounds) {
+    &:nth-child(#{$i}) {
+      background: nth($images, $i), nth($backgrounds, $i);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (max-width: $screen-sm-max) {
+        background-size: 532px 320px, 100%;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        background-position: right bottom;
+        background-size: 175px 213px, 100%;
+      }
+
+      .card-btn {
+        @include button-styles(nth($buttons, $i), $c-card-btn-bg, $c-card-btn-hover, $c-card-btn-bg-hover);
+      }
+    }
+  }
+}
+
+@mixin button-styles($color, $bg, $hover, $hover-bg ) {
+  color: $color;
+  background-color: $bg;
+
+  &:hover {
+    background-color: $hover-bg;
+    color: $hover;
+  }
+}

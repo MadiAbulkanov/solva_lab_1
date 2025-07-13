@@ -1,0 +1,39 @@
+.product-cards-title {
+  margin-bottom: 41px;
+  text-align: center;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 25px;
+    margin-bottom: 25px;
+    letter-spacing: -0.2px;
+  }
+}
+
+.cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+
+  @media (max-width: $screen-md-max) {
+    gap: 10px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    gap: 0;
+  }
+
+  .product-card {
+    &:nth-child(2) {
+      @media (max-width: $screen-xs-max) {
+        order: 3;
+      }
+    }
+
+    &:nth-child(4) {
+      @media (max-width: $screen-xs-max) {
+        order: 4;
+      }
+    }
+  }
+}
